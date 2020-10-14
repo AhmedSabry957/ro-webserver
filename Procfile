@@ -1,1 +1,1 @@
-Worker: sudo node .
+Worker: node .
