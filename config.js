@@ -1,7 +1,7 @@
 module.exports = {
 
     server: {
-        port: 3000,
+        port: 80,
         secret: 'asodjhdwuy237hrjhJHASDJHASDUYHAS8HDSUhjhajsdasdksajk'
     },
 
