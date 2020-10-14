@@ -30,6 +30,6 @@ const init = () => {
 
 init();
 
-app.listen(process.env.PORT || config.server.port, () => {
-    console.log(`Server started on port ${process.env.PORT || config.server.port}, PID: ${process.pid}`)
+app.listen(config.server.port, () => {
+    console.log(`Server started on port ${config.server.port}, PID: ${process.pid}`)
 });
