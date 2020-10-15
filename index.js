@@ -1,10 +1,6 @@
-// process.env.NODE_ENV = process.argv.includes('--development')
-//     ? 'development'
-//     : 'production';
-
-if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-}
+process.env.NODE_ENV = process.argv.includes('--development')
+    ? 'development'
+    : 'production';
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -15,7 +11,7 @@ const app = express();
 
 app.use(bodyParser.text({ type: '*/*' }));
 
-mongoose.connect('mongodb+srv://settle:1louisloo@cluster0.sbaed.azure.mongodb.net/Cluster0?retryWrites=true&w=majority', { //mongodb+srv://settle:1louisloo@cluster0.av895.azure.mongodb.net/Cluster0?retryWrites=true&w=majority
+mongoose.connect('nopers', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
